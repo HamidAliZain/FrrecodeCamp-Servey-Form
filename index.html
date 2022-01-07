@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<style>
+		#sub {
+			padding: 10px 210px;
+			font-size: 15px;
+			background: green;
+			color: white;
+			border: solid;
+			border-color: green;
+		}
+
+		#name {
+			border: solid;
+			padding: 5px 290px 5PX 0PX;
+			font-size: 15px;
+			border-color: white;
+		}
+
+		#email {
+			border: solid;
+			padding: 5px 290px 5PX 0PX;
+			font-size: 15px;
+			border-color: white;
+		}
+
+		#number {
+			padding: 5px 290px 5PX 0PX;
+			font-size: 15px;
+			border-color: white;
+
+		}
+
+
+
+		#cars {
+			padding: 5px 350px 5PX 0PX;
+			font-size: 15px;
+			border-color: white;
+
+		}
+
+		.iron {
+			padding: 0px 350px 10px;
+		}
+
+		#survey-form {
+			font-style: bold;
+			font-family: sans-serif;
+			padding: 50px 40px;
+			background: #292949;
+
+		}
+
+		#head {
+			padding: 20px 0px;
+			text-align: center;
+			font-size: 40px;
+			color: Black;
+			font-style: italic;
+		}
+
+		#div-bach {
+			color: white;
+		}
+
+		p {
+			padding: 0px 400px 0px;
+		}
+
+		#game {
+			padding: 5px 100px 10PX 0PX;
+		}
+
+		.setup {
+			background-position: center;
+			background-size: cover;
+			width: 100%;
+			background-repeat: no-repeat;
+			height: 900px;
+			background-image: url(https://previews.123rf.com/images/blankstock/blankstock1504/blankstock150402311/38700947-circles-background-with-lines-quiz-icons-brainstorm-or-human-think-checklist-symbol-survey-poll-or-q.jpg)
+		}
+	</style>
+</head>
+
+<body>
+	<div class="setup">
+
+		<div id="div-bach">
+			<header id="head">freeCodeCamp Survey Form</header>
+			<div class="iron">
+				<form id="survey-form">
+					<label for="name">Name</label></br>
+<input type="text" id="name"  placeholder="Name" required></br></br>
+<label for="email">Email</label></br>
+<input type="text" id="email" placeholder="Email" required></br></br>
+<label for="number">Number</label></br>
+<input type="text" id="number" placeholder="Number" min="0" max="18" required></br></br>
+
+<label for="choice">Would you recommend a best Car</label></br>
+  <input type="radio" name="car" id="audi" value="audi">
+  <label for="audi">Audi</label></br>
+  <input type="radio" name="car" id="Farrari" value="Farrari">
+  <label for="V">Farrari</label></br>
+  <input type="radio" name="car" id="125" value="125">
+  <label for="125">125</label></br></br>
+
+            
+<label>Select your Own car:</label></br>
+<select id="cars">
+    <option disabled selected value>Select an option</option>
+  <option value="farrari">Farrari</option>
+  <option value="corrola">Corrola</option>
+  <option value="vitz">Vitz</option>
+  <option value="audi">Audi</option>
+</select> </br></br>
+
+<label for="Place">Your favourite Place</label></br>
+<input type="checkbox" name="visit" id="visit"  value="Australia">
+<label for="visit">Australia</label></br>
+<input type="checkbox" name="visit" id="visit"  value="Australia">
+<label for="visit">America</label></br>
+<input type="checkbox" name="visit" id="visit"  value="Australia">
+<label for="visit">Paris</label></br></br>
+
+<label for="game">Any comments or suggestions?</label></br>
+<textarea id="game" name="game" rows="4" cols="50"></textarea> </br></br>
+    <button type="submit" id="sub">
+        Submit
+        </button> 
+</form>
+</div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
